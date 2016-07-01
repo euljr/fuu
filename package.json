@@ -1,0 +1,23 @@
+{
+  "name": "fuu",
+  "version": "1.0.0",
+  "description": "Simple custom error handling to use with Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/euljr/fuu.git"
+  },
+  "keywords": [
+    "express",
+    "error"
+  ],
+  "author": "Euler Menezes Junior <euler@bsd.com.br> (http://eulermenezes.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/euljr/fuu/issues"
+  },
+  "homepage": "https://github.com/euljr/fuu#readme"
+}
