@@ -48,7 +48,7 @@ make it able to render and send a view as response.
 app.get('/', function(req, res, next){
     getSomethingFromDb(function(err, data) {
         if(err)
-            next({ code 1: , error:  err });
+            next({ code: 1 , error:  err });
         else if(data.length == 0)
             next({ code: 3 });
         else
