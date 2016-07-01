@@ -1,6 +1,6 @@
 # fuu
 
-Fuu is a simple module and made for learning purposes, 
+Fuu is a simple module made for learning purposes, 
 please do not expect something fancy.
 
 ## Installation
