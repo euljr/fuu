@@ -1,6 +1,6 @@
 # fuu
 
-Fuu is a simple module made for learning purposes, 
+Fuu is a simple module made for learning purposes and for a API, 
 please do not expect something fancy.
 
 ## Installation
@@ -22,7 +22,7 @@ var express = require('express');
 var fuu = require('fuu');
 
 fuu.add([
-    { code: 1, message: 'Custom error', status: 500 },
+    { code: 1, message: 'Custom error' },
     { code: 2, message: 'Auth error', status: 401 }    
 ]);
 
@@ -40,6 +40,9 @@ Error example
 You can send the default error together, fuu will get the error by its
 `code` and set the `message` and `status` if defined, if not, will
 fallback to the default ones.
+
+Fuu handlers will send a JSON response, in the future I'm planning to 
+make it able to render and send a view as response.
 
 ```js
 app.get('/', function(req, res, next){
