@@ -38,13 +38,13 @@ var fuu = {
         return errors.filter(e => e.code == code)[0];
     },
     parseError: function (err) {
-        var e = undefined;
+        var e = null;
         var message;
         var error;
         var status;
         if (err.hasOwnProperty('code'))
             e = fuu.get(err.code);
-        if (typeof e !== undefined) {
+        if (e != null) {
             message = e.message ? e.message : (err.error ? (err.error.message || '') : '');
             status = e.status ? e.status : (err.error ? (err.error.status || 500) : 500);
             error = err.error || {};
